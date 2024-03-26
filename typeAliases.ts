@@ -14,6 +14,8 @@ const fun = (newUser:user):user => {
 }
 
 let x = fun({naam:"ak",age:21,isAdult:true});
-console.log("User = ",x);
+console.log("User = ",x);         // User =  { naam: 'ak', age: 21, isAdult: true }
 
 export{}
+
+
