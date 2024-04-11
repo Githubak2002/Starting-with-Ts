@@ -1,0 +1,757 @@
+
+// console.log(`Text is ${ch23} using  templates`); 
+
+// alert("an  alert");
+// prompt
+
+// VARIABLES //
+
+// let x = 5;
+// console.log("var "+x);
+// document.getElementById("h11").innerHTML = "Hello world"; 
+
+
+// -------------- arithmatic expressions ------------------------
+
+// let ax1 = 3,ax2 = 4;
+// console.log("sum :"+(ax1+ax2) );
+
+
+// ------ USERS input ------ //
+
+/* 
+// let user1 = prompt("name?");
+// console.log("hello"+user1);
+document.getElementById("bt1").onclick = function()
+{
+    let name;
+    name = document.getElementById("it1").value;
+    console.log(name);
+    document.getElementById("lab01").innerHTML = "This is a username";
+}
+// document.getElementById("bt1").onclick = function()
+*/
+
+
+// ------ Type conversion ------ //
+
+/*
+let x23 = window.prompt("age?");
+// age += 1;     cannot concatinate string and no 
+// console.log(age);
+// x23 = Number(x23);
+x23 = Number(x23);
+console.log(typeof x23);
+x23 += 2; 
+x23 = x23.toString();
+console.log(typeof x23);
+
+let d = 12;
+console.log("value of d is:"+d +" and the type of d is ",typeof d);
+c = String(d);
+console.log("value of d is:"+c +" and the type of d after changing it to Number is ",typeof c);
+
+*/
+// let y = 76;
+// let u = "23";
+// u = Number(u);
+// y = String(y);
+// console.log("u : "+u +" "+typeof(u));
+// console.log(typeof(y));
+
+// ====== CONSTANTS =====
+
+// let opo3p = 3.15;        //can be changed
+// const opp9pi = 3.14;        //cannot be changed
+
+// ------ MATH ------
+
+/* let t56g = 344.45;
+x = Math.abs(-4.56);    //4.56
+x = Math.sqrt(4);       //2
+x = Math.round(5.4)     //5
+x = Math.floor(45.999)  //45
+x = Math.pow(5,3)       //45
+console.log(Math.max(x,t56g));
+console.log(x);
+*/
+
+
+// ------ STRING PROPPERTIES ------
+
+// let ph5 = "123-456-7890";   //string not no.
+// let ui6 = "   This is me!   ";
+// console.log("length : "+ui6.length);
+// console.log(ui6.charAt(5));
+// console.log(ui6.indexOf("i"));
+// console.log(ui6.trim());        //use to remove blank spaces
+// console.log(ui6.trim().toUpperCase());
+// ph5 = ph5.replaceAll("-","");
+// console.log("ph no :"+ph5);
+
+// -------------- SLICE  ------------------
+
+// let fulnam = "Ak here";
+// let fnam;
+// let lnam;
+
+// console.log("fname: "+fulnam.slice(0,2));
+// console.log("lname: "+fulnam.slice(3));
+// console.log("using indexof");
+// fnam = fulnam.slice(fulnam.indexOf(" "));
+// console.log("fname: "+fnam);
+
+
+// ------METHOD CAHNNING-------
+// USING ALL METHOD IN A LINE, TO REDUUCE THE CODE LENGTH AND BECCOMSE EASY TO UNDRSTAND
+
+// let n = "arjit singh";
+// let fn = n.charAt(0).toUpperCase();
+// // n.indexO(" ");                                                                       
+// console.log("name: "+fn);
+
+// --------- if else-------
+// condition ? exeression 1 : expression 2;
+
+// document.getElementById("cbsb").onclick = function()
+// {
+//     let c = document.getElementById("cb4");
+//     if(c.checked)
+//         console.log("checked");
+//     else
+//         console.log("please check the checkbox then submit");
+// }
+
+// --------- SWITCH STATMENTS-------
+// to get the grade based on marks
+
+// ------- OPERATOR !,&& and || --------  
+
+// --------- LOOP, BREAK AND CONTINUE -----------
+// for of loop
+// let arr6 = [1,2,5,4,9,3,4];
+// for(let i of arr6)
+// {
+//     console.log(i);
+// }
+
+
+
+// ------- FUNCTION -----------
+// base on no of args (fun overloading)
+
+// let a=5,b=6,c=2,d=3;
+// console.log("sum: "+sum(a,b))
+// function sum(a,b){
+//     return a+b;
+// }
+
+// let r344 = fun121("Ak",20);
+// console.log("Total marks : "+r344);
+// function fun121(name,age)
+// {
+//     console.log("Its a function");
+//     console.log("Name: "+name);
+//     console.log("Age: "+age);
+//     let sub1 = prompt("Enter your marks in sub1");
+//     let sub2 = prompt("Enter your marks in sub2");
+//     sub1 = Number(sub1);
+//     sub2 = Number(sub2);
+//     return (sub1+sub2);
+
+// }
+
+//  `````` TEMPLATES `````````````````````
+
+
+// let ch23 = "a text";
+// console.log(`Text is ${ch23} using  templates`); 
+
+//  -----------TIME -> 1:58 hr ---------------
+
+// no.toLocalString(local,{option})
+// above fun is usde when an no needs to be changed in currency
+
+// ---------temperature convertion ---------------
+
+
+// --------- ARRAY  and spred operator (...) ----------
+
+// let a = ["rtu","paper","top"];
+// console.log(a);
+// a[2] = "back bencher";
+// console.log(a);      // push and pop insert and pop from last
+// a.push("ak"); 
+// console.log(a);
+// a.pop();
+// console.log(a);
+// a.unshift("first"); //insert at the iatarting & pop from last
+// console.log(a);
+// a.shift("first");
+// console.log(a);
+// console.log("length of array:" + a.length);
+// console.log("index of paper:" + a.indexOf("paper"));
+
+// access ele of array using loop
+// for(let i=0;i<=a.length;i++)
+// {
+//     console.log(i);
+// }
+// x = a.sort();
+// console.log(a);
+// x = a.reverse();
+// console.log(a);
+
+
+//  -----------------For each array ----------------
+
+// ----------- spredd operator ... -------------------
+// console.log(...a);
+
+// let arr4 = [1,2,5,4,9,3,4];
+// max0 = Math.max(...arr4); 
+// console.log("max : "+max0);
+
+// let cl3 = ["ab","cd"]; 
+// let cl4 = ["ba","dc"]; 
+// cl3.push(...cl4);
+// console.log(cl3);
+
+// -------------REST PARAMETER using loop ----------------
+
+// let a=5,b=4,c=2;
+// console.log("Same FUCTION for different no of i/p");
+// console.log("sum of two no : "+sum(a,b));
+// console.log("sum of three no : "+sum(a,b,c));
+// function sum (...number)
+// {
+//     let total = 0;
+//     for(let no of number)
+//     {
+//         total = no + total;
+//     }
+//     return total;
+// 
+
+//////////// 2:38 ////////////////////////////////////////////////////////////
+
+// ----------- CALL BACK -------------- CALL BACK ------------------- 
+// A function is passed as an argument to another function
+
+// sum(2,3,discon);
+
+// function sum(x,y,cal){
+//     let res = x+y;
+//     cal(res);
+// }
+// function discon(op){
+//     console.log(op);
+// }
+
+// ------------- array.forEach() ----------------------------
+// let stud = ["anuj","puhpa","babu"];
+// stud.forEach(fun);
+// stud.forEach(fun2);
+
+// function fun(ele,index,arr){
+//     arr[index] = ele[0].toUpperCase() + ele.substring(1);
+// }
+// function fun2(ele) {
+//     console.log(ele);
+// }
+// console.log(stud[0]);
+
+// arr = [1,23,534,2,43];
+// arr.forEach(fun);
+// function fun(ele,i,arr){   
+//     console.log(ele);    
+// }
+
+// ------------ function expression -------------
+
+// const greeting = function () {
+//     console.log("fuction expression");
+// }
+// greeting();
+// EXAMPLE 
+
+// let c = 0;
+// document.getElementById("dcr").onclick = function()
+// {
+//     c = c-1;
+//     document.getElementById("h34").innerHTML = c;
+// } 
+// document.getElementById("inc").onclick = function()
+// {
+//     c = c+1;
+//     document.getElementById("h34").innerHTML = c;
+// } 
+
+// ---------- arrow function -----------
+// const h = function(un){
+//     console.log(`Hello ${un}`);
+// }
+// h("anurag");
+
+// const h = (un) => {    console.log(`Hello ${un}`); }
+// const g = (x,y) => x+y
+// h("anurag");
+// console.log(`sum is ${g(2,5)}`);
+
+// let ran = Math.floor(Math.random()*6 + 1);
+// console.log("A Random no on Dice is " +ran);
+
+
+//------------ 3:06 ------------------
+
+// ------------ REST arguments ---------------
+// let  x=4;
+// let  k=5;
+// let  g=6;
+// console.log(add(x,k));
+// function add(...v) {
+//     sum = 0;
+//     for(let i of v){
+//         sum = sum + i;
+//     }
+//     return sum;
+// }
+
+// let c = "babu";
+// let d = "Mushaya";
+// fun1(c,d,fun2);
+// function fun1(a,b,kallback) {
+//     let fn = (a + " " + b);
+//     fun2(fn);    
+// }
+// function fun2(res) {
+//     console.log("name is: "+res);
+
+// }
+
+//  ------------ VIDEO no -> 41 [array function] ----------------------
+
+// -------------- arraymap() --------------------
+
+// let n = [1,2,3,4,5];
+
+// let newarr = n.map(square);
+
+// newarr.forEach(print);
+
+// function square(ele) {
+//     return Math.pow(ele,2);
+// }
+// function print(ele) {
+//     console.log(ele);
+// }
+
+// -------------- array.filter() --------------------
+
+// let a = [1,10,3,9,8,6,3];
+
+// let newarr = a.filter(callfun);
+// newarr.forEach(print);
+// function callfun(ele){
+//     if(ele%2 == 0)
+//     return ele;    
+// }
+// function print(ele)
+// {
+//     console.log(ele);
+// }
+
+// ------------ video 47 ----------------------------
+
+// ------------------ NESTER FUNCTION ---------------
+
+// username and userid fun can't be called
+// let un = "name",id = 34;
+// login();
+// function login() {
+//     username();
+//     userid();
+
+//     function username() {
+//         console.log("Username : "+un);
+//     }
+//     function userid() {
+//         console.log("USer id : "+id);
+//     }
+// }
+
+// ------------- ??? MAP ??? ------------ video 50 --------------------
+
+// ---------------- OBJECTS ------------------------
+// obj contains properties and functions()
+
+// ------------------- This keyword ---------------
+//  reference to a perticular obj
+
+// const obj = {
+//     color: "red",
+//     no_of_balls: 34,
+
+//     fun1 : function()    {
+//         console.log("1st function of the object");
+//     },
+//     fun2 : function()    {
+//         console.log("2nd function of the object.");
+//         // fun accessing the properties of an obj -> THIS 
+//         console.log(`FUN OF OBJ CAN ACCESS PROPERTIES OF IT'S OBJ BY USING THIS KEYWORD, as color is : ${this.color}`);
+//     }
+// }
+
+// console.log("color of obj created : "+obj.color);
+// obj.fun1();
+// obj.fun2();     // access the properties using -> THIS KEYWORD  
+
+// ---------------------- CLASS ------------------------------ VIDEO 53
+
+// class c_name{
+//     id = 0;
+
+//     marks(mrks){
+//         console.log(`by default you obtained ${mrks} marks`);
+//     }
+// }
+// const objofclass_c_name = new c_name();
+// objofclass_c_name.id = objofclass_c_name.id+1;
+// console.log("Id of stud 1 is "+objofclass_c_name.id);
+// objofclass_c_name.marks("34");
+
+// const obj2 = new c_name();
+// objofclass_c_name.id = objofclass_c_name.id+1;
+// console.log("Id of stud 2 is "+objofclass_c_name.id);
+// objofclass_c_name.marks("45");
+
+// ---------------- constructor ------VIDEO 54-------------------
+// is a special method that, is used to pass args and assigs 
+
+// class con{
+//     constructor(name,id,sub){
+//         this.name = name;
+//         this.id = id;
+//         this.sub = sub;
+//     }
+//     fun()
+//     {
+//         console.log(`Stud1 is studing ${this.sub}`);
+//     }
+// }
+// const obj = new con("ak",34,"JavaScript");
+// console.log("name is: "+obj.name);
+// obj.fun();
+
+// ------------ Static var and Method ------------------------
+//  static var - var whose single copy is shared b/n all the class, can only be accessed by main class
+
+// class stud{
+//     static no_of_stud = 0;
+//     constructor(name){
+//         this.name = name;
+//         stud.no_of_stud += 1;
+//     }
+//     funname(){
+//         console.log(`name of stud is ${this.name}`);
+//     }
+//     static startstudying(){
+//         console.log("Start fast!")
+//     }
+// } 
+
+// const st1 = new stud("Aj");
+// const st2 = new stud("Balu");
+// const st3 = new stud("Pushpa");
+
+// st1.funname();
+// console.log("no of student enrolled : "+stud.no_of_stud);
+
+// stud.startstudying();
+
+
+// --------------- INHERITANCE -------------------------------
+
+// class baap_father_class{
+//     alive = true;
+//     name = "BAAP";
+//     age(){
+//         console.log("Age is: "+45);
+//     }
+// }
+// class child1 extends baap_father_class{
+//     age()
+//     {
+//         console.log("Age is: "+20)
+//     }
+// } 
+// const ch1_obj = new child1();
+// // const ch2_obj = new child2();
+// console.log(`Baap says ${baap_father_class.alive}`);
+// ch1_obj.age();
+
+// --------------- Super keyword -------------------------------
+// used to access/refers to parent class
+// used to invoke constructor of parent class
+
+// class boss{
+//     constructor(id,marks){
+//         this.id = id;
+//         this.marks = marks;
+//     }
+// }
+// class d1 extends boss{
+//         constructor(id,marks,pass){
+//         super(id,marks);
+//         this.pass = pass;
+//     }
+// }
+// class d2 extends boss{
+//     constructor(id,marks,name){
+//         super(id,marks);
+//         this.name = name;
+//     }
+// }
+// const obj1 = new d1(2,45,4335);
+// const obj2 = new d2(2,45,"pushpa");
+// console.log(obj1.id);
+// console.log(obj1.marks);
+// console.log(obj1.pass);
+
+// ----------------------- OBJECTS as Arguments -------------------------
+
+// class c{
+//     constructor(id,marks){
+//         this.id = id;
+//         this.marks = marks;
+//     }
+// }
+// const obj1 = new c(2,45);
+// const obj2 = new c(6,65);
+
+// fun(obj1);
+// function fun(object){
+//     console.log(`id ${object.id}`);
+// }
+// gracemarks(obj2,5);
+// function gracemarks(ojb31,g_marks){
+//     obj2.marks = obj2.marks + g_marks;
+//     console.log(`marks obtained ${obj2.marks}`);
+// }
+
+
+//  ------------------ Arrays of object -------------
+
+// class ccf{
+//     constructor(car_name, color) {
+//         this.car_name = car_name;
+//         this.color = color;
+//     }
+    
+//     fun(){
+//     console.log(`Car selected is ${this.car_name}`);
+//     }
+// }
+// const obj2 = new ccf("Thar","blue");
+// const obj1 = new ccf("Lambo","Yellow");
+// // fun(obj1);
+
+// const c_arr = [obj1,obj2];
+// console.log(c_arr[0].fun());
+// console.log("and it's color is "+ c_arr[0].color);
+// console.log(c_arr[1].fun());
+
+// ---------------- ANOMYMOUS OBJECTS ------------
+// ------------------ VIDEO 61 ------------------
+//  for multiple obj it's better to use anomymous obj in arrays of obj
+
+// class cards{
+//     constructor(value,suit){
+//         this.value = value;
+//         this.suit = suit;
+//     }
+// }
+// const obj1 = new cards("A","Heart");
+
+// const arr = [new cards("k","Spade"),
+//             new cards("2","Heart"),
+//             new cards("J","Spade"),
+//             new cards("8","Dimond")
+//             ];
+
+// console.log(obj1.value + " " + obj1.suit);
+// console.log(arr[0].value +" "+ arr[0].suit);
+
+// arr.forEach(cd => console.log(`${cd.value} ${cd.suit}`));
+
+// ------------------------ errors --------------------
+
+// ----------------------- SetTimeOut---- & ----- clear time out ----------------------
+ 
+// let no = 20;
+// let c1 = setTimeout(fun1,3000,no);
+// let c2 = setTimeout(fun2,6000);
+// let c3 = setTimeout(fun3,9000);
+
+// function fun1(no){
+//     alert("1hello u got "+no);
+// }
+// function fun2(){
+//     alert("2hello");
+// }
+// function fun3(){
+//     alert("3hello");
+// }
+// document.getElementById("s_tout").onclick = function(){
+//     clearTimeout(c1);
+//     clearTimeout(c2);
+//     clearTimeout(c3);
+//     alert("clearTimeOut");
+//     console.log("set/clearTimeOut");
+// } 
+    
+// --------------------- setInterval --------------
+
+// let count = 0;
+// let max = prompt("Enter a no");
+// max = Number(max);
+
+// const time = setInterval(countUP,1000);
+// function countUP(){
+//     count = count+1;
+//     console.log(count);
+//     if(count>=max){
+//         clearInterval(time);
+//     }
+// }
+
+//  ---------------------------------Date objects -------- GET/SET date ----------------------
+// if for month = 1 -> feb for = 0 -> januray 
+
+// let  date = new Date();
+// console.log(date);
+// // date = date.toLocaleString();   //local format
+// // console.log(date);
+
+// document.getElementById("4_date").innerHTML = date;
+
+// // to set date
+// let d1 = new Date(2002,2,2,9,34,56,345);
+// console.log(`U was born on : ${d1}`);
+
+// // --- GET date ---
+// console.log(`Today's date and time`);
+// console.log(`year: ${date.getFullYear()}`);
+// console.log(`month: ${date.getMonth()+1}`);
+// console.log(`Date: ${date.getDate()}`);
+// console.log(`Hours: ${date.getHours()}`);
+// console.log(`Minutes: ${date.getMinutes()}`);
+
+// // --- SET date ---
+// let date_set_obj =  new Date();
+// date_set_obj.setFullYear(2025);
+// // date_set_obj.setMonth(2);
+// // date_set_obj.setDate(2); 
+// date_set_obj = date_set_obj.toLocaleString();
+// document.getElementById("date87").innerHTML = date_set_obj;
+    
+// let d4 = new Date();
+// // d4 = d4.toLocaleString();
+// document.getElementById("date8").innerHTML=(setdatefun(d4));
+// function setdatefun(d4) {
+//     let y=d4.getFullYear();    
+//     let m=d4.getMonth();    
+//     let d=d4.getDate(); 
+//     return `TODAYS -> year/month/date : ${y}/${m+1}${d}`;   
+// }
+
+
+//  ---------------------------CREATING A CLOCK ---------------
+// let clk_obj = new Date();
+// clk_obj = clk_obj.toLocaleString();
+// document.getElementById("current_time").innerHTML=clk_obj;
+
+
+update();
+document.getElementById("create_clock");
+function update() {
+    let obj = new Date();
+    create_clock.innerHTML = clkfun(obj);
+
+    // console.log(clkfun);    
+    clkfun(obj);
+    function clkfun(obj){
+        hr = obj.getHours();
+        let amorpm = "am";
+        if(hr>12){
+            amorpm = "pm";
+            hr = hr%12 || 12; 
+        }
+        
+        min = obj.getMinutes();
+        sec = obj.getSeconds();
+        return `Current time is ${hr}:${min}:${sec} ${amorpm}`;    
+    }
+}
+
+setInterval(update,1000);
+
+
+// ------- Synchronous & aSynchronous ---------
+// -------- console.time -----------
+// it tells the time required to complet a synchronous task
+// console.time("Time responce");
+// alert("Hit the ok button");
+// console.timeEnd("Time responce");
+
+
+//  ----------------- promise ------------------------
+
+// let x = 2;
+// const p = new Promise((resolve,reject) =>{
+//     if(x==2)
+//     resolve("true")
+//     else 
+//     reject("false")
+// })
+// p.then(value => console.log("2=2"+value)).catch(error => console.log("error"));
+// let fileLoaded = true;
+
+// ---------------- DOM doc obj model ----------------
+// used for modify/change the content of webpage
+
+// console.log(document);
+// console.log(document.title);
+// console.log(document.URL);
+// document.title = "Title changed";
+// document.body.style.backgroundColor = "blue";
+
+// -------------- document.getElementsBy -----------
+// document.querySelector("#id/.class/[name]");
+// document.getElementById("id");
+// document.getElementsByClassName("class");
+// document.getElementsByTagName("tag/HTML ele");
+
+
+
+// let x1 = document.getElementById("gebid");
+// x1.style.backgroundColor = "lightblue";
+
+// let a = document.getElementsByName("r_butn");
+// a[0].checked = "checked";
+// console.log(a);
+// a.forEach(ele => {
+//     if(ele.checked){
+//         console.log(ele.value);
+//     }
+// });
+
+// let y4 = document.getElementsByTagName("li");
+// y4[0].style.backgroundColor = "grey";
+
+// document.querySelector("#gebid").style.color="black";
+// let d = document.querySelector(".c3");
+// d.style.color = "orange";
+
+
+
