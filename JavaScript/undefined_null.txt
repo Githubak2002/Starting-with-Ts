@@ -17,6 +17,23 @@ let obj = {};
 console.log(obj.property); // Output: undefined
 
 
+a. Variable Declaration: variable without initializing it, its value is automatically set to undefined. This is normal and expected behavior.
+let x;
+console.log(x); // Output: undefined
+
+b. Function Return Values: If a function does not explicitly return a value, its return value is undefined. This is also normal and expected behavior.
+
+function foo() {
+    // No return statement
+}
+console.log(foo()); // Output: undefined
+
+c. Accessing Non-existent Object Properties: When you try to access a property of an object that does not exist, you'll get undefined. This can be useful for checking if a property exists or not.
+
+let obj = {};
+console.log(obj.nonExistentProperty); // Output: undefined
+
+
 
 
 null
