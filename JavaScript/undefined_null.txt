@@ -31,3 +31,11 @@ console.log(y); // Output: null
 
 let obj = { property: null }; // property intentionally set to null
 console.log(obj.property); // Output: null
+
+
+
+ null == undefined // true
+ null === undefined // false
+
+Undefined	Null
+Undefined means a variable has been declared but has yet not been assigned a value.	Null is an assignment value. It can be assigned to a variable as a representation of no value. 
