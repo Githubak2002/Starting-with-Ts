@@ -1,0 +1,58 @@
+undefined
+ - When a variable is declared but not initialized, or when a function does not return a value, the variable or the function’s result is undefined.
+ - Accessing an object property or array element that does not exist also results in undefined.
+ - It is a primitive value.
+
+
+// ================ code ================
+let x; // variable declared but not initialized
+console.log(x); // Output: undefined
+
+function doSomething() {
+// no return statement, so the function returns undefined
+}
+console.log(doSomething()); // Output: undefined
+
+let obj = {};
+console.log(obj.property); // Output: undefined
+
+
+a. Variable Declaration: variable without initializing it, its value is automatically set to undefined. This is normal and expected behavior.
+let x;
+console.log(x); // Output: undefined
+
+b. Function Return Values: If a function does not explicitly return a value, its return value is undefined. This is also normal and expected behavior.
+
+function foo() {
+    // No return statement
+}
+console.log(foo()); // Output: undefined
+
+c. Accessing Non-existent Object Properties: When you try to access a property of an object that does not exist, you'll get undefined. This can be useful for checking if a property exists or not.
+
+let obj = {};
+console.log(obj.nonExistentProperty); // Output: undefined
+
+
+
+
+null
+ - It is a deliberate assignment that represents the absence of any object value.
+ - It is often used to explicitly indicate that a variable or object property should have no value or no reference to any object.
+ - It is also a primitive value.
+Example: In the example, we have shown null.
+
+// ================ code ================
+let y = null; // variable intentionally set to null
+console.log(y); // Output: null
+
+let obj = { property: null }; // property intentionally set to null
+console.log(obj.property); // Output: null
+
+
+
+ null == undefined // true
+ null === undefined // false
+
+Undefined	Null
+Undefined means a variable has been declared but has yet not been assigned a value.	Null is an assignment value. It can be assigned to a variable as a representation of no value. 
