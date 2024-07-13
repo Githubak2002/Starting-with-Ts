@@ -1,23 +1,21 @@
 // console.log(`Text is ${ch23} using  templates`); 
 
-// alert("an  alert");
-// prompt
 
-// VARIABLES //
+// ------ Variables ------
+/*
+let x = 5;
+console.log("var "+x);
+document.getElementById("h11").innerHTML = "Hello world"; 
+ */
 
-// let x = 5;
-// console.log("var "+x);
-// document.getElementById("h11").innerHTML = "Hello world"; 
+// ------ arithmatic expressions ------
+/*
+let ax1 = 3,ax2 = 4;
+console.log("sum :"+(ax1+ax2) );
+console.log("ax1^ax2 = ",ax1**ax2)
+*/
 
-
-// -------------- arithmatic expressions ------------------------
-
-// let ax1 = 3,ax2 = 4;
-// console.log("sum :"+(ax1+ax2) );
-
-
-// ------ USERS input ------ //
-
+// ------ USERS INPUT ------ 
 /* 
 // let user1 = prompt("name?");
 // console.log("hello"+user1);
@@ -31,9 +29,7 @@ document.getElementById("bt1").onclick = function()
 // document.getElementById("bt1").onclick = function()
 */
 
-
-// ------ Type conversion ------ //
-
+// ------ TYPE conversion ------ 
 /*
 let x23 = window.prompt("age?");
 // age += 1;     cannot concatinate string and no 
@@ -50,156 +46,223 @@ console.log("value of d is:"+d +" and the type of d is ",typeof d);
 c = String(d);
 console.log("value of d is:"+c +" and the type of d after changing it to Number is ",typeof c);
 
+let y = 76;
+let u = "23";
+u = Number(u);
+y = String(y);
+console.log("u : "+u +" "+typeof(u));
+console.log(typeof(y));
 */
-// let y = 76;
-// let u = "23";
-// u = Number(u);
-// y = String(y);
-// console.log("u : "+u +" "+typeof(u));
-// console.log(typeof(y));
 
-// ====== CONSTANTS =====
-
-// let opo3p = 3.15;        //can be changed
-// const opp9pi = 3.14;        //cannot be changed
+// ------ Const ------
+/* 
+let piiiii = 3.15;        //can be changed
+const piii = 3.14;        //cannot be changed
+*/
 
 // ------ MATH ------
-
-/* let t56g = 344.45;
+/* 
 x = Math.abs(-4.56);    //4.56
 x = Math.sqrt(4);       //2
 x = Math.round(5.4)     //5
 x = Math.floor(45.999)  //45
+x = Math.ceil(45.009)   //46  
 x = Math.pow(5,3)       //45
-console.log(Math.max(x,t56g));
-console.log(x);
+x = Math.max(5,3,1)     //5
 */
 
 
+
 // ------ STRING PROPPERTIES ------
+/*
+let ph5 = "123-456-7890";   //string not no.
+let ui6 = "   This is me!   ";
+let oneDigit = "4"
+console.log(ui6.charAt(5));             // i 
+console.log(ui6.indexOf("i"));          // 5
+console.log("length : "+ui6.length);    // 17
+console.log(ui6.trim());                // use to remove whitespaces
+console.log(ui6.startsWith(" "))        // true
+console.log(ui6.includes(" "))          // true
+consloe.log(oneDigit.padStart(2,"0"))   // 02
 
-// let ph5 = "123-456-7890";   //string not no.
-// let ui6 = "   This is me!   ";
-// console.log("length : "+ui6.length);
-// console.log(ui6.charAt(5));
-// console.log(ui6.indexOf("i"));
-// console.log(ui6.trim());        //use to remove blank spaces
-// console.log(ui6.trim().toUpperCase());
-// ph5 = ph5.replaceAll("-","");
-// console.log("ph no :"+ph5);
+ph5 = ph5.replaceAll("-","");           // replaces - with no char
+console.log(ui6.trim().toUpperCase());
+ */
 
-// -------------- SLICE  ------------------
+// ------ STRING SLICE  ------
+/*
+let fulnam = "Ak_here";
+let fnam;
+let lnam;
 
-// let fulnam = "Ak here";
-// let fnam;
-// let lnam;
+console.log("fName: "+fulnam.slice(0,2));   // Ak
+console.log("lName: "+fulnam.slice(3));     // here
+console.log("lChar: "+fulnam.slice(-1));    // e
 
-// console.log("fname: "+fulnam.slice(0,2));
-// console.log("lname: "+fulnam.slice(3));
-// console.log("using indexof");
-// fnam = fulnam.slice(fulnam.indexOf(" "));
-// console.log("fname: "+fnam);
+fnam = fulnam.slice(fulnam.indexOf(" "));
+console.log("fname: "+fnam);
+ */ 
+
+// ------ METHOD CAHNNING-------
+/* 
+USING ALL METHOD IN A LINE, TO REDUUCE THE CODE LENGTH AND BECCOMSE EASY TO UNDRSTAND
+
+let n = "  arjit singh  ";
+let fn = n.trim().n.charAt(0).toUpperCase() + n.trim().slice(1).toLowerCase();   
+
+console.log("name: "+fn);    // name: Arjit singh
+*/
 
 
-// ------METHOD CAHNNING-------
-// USING ALL METHOD IN A LINE, TO REDUUCE THE CODE LENGTH AND BECCOMSE EASY TO UNDRSTAND
+// ------  Operator !,&&, ||, =, ==, ===, !=, !== ------   
+/*
+let h71 = 3.14;                 
+let j71 = "3.14";               
+console.log((h71 == j71))       // true -  comparision operator
+console.log((h71 === j71))      // false - valuse and datatype = ?
+ */
 
-// let n = "arjit singh";
-// let fn = n.charAt(0).toUpperCase();
-// // n.indexO(" ");                                                                       
-// console.log("name: "+fn);
 
-// --------- if else-------
+// ------  if else ------ 
+/* 
 // condition ? exeression 1 : expression 2;
-
-// document.getElementById("cbsb").onclick = function()
-// {
-//     let c = document.getElementById("cb4");
-//     if(c.checked)
-//         console.log("checked");
-//     else
-//         console.log("please check the checkbox then submit");
-// }
-
-// --------- SWITCH STATMENTS-------
-// to get the grade based on marks
-
-// ------- OPERATOR !,&& and || --------  
-
-// --------- LOOP, BREAK AND CONTINUE -----------
-// for of loop
-// let arr6 = [1,2,5,4,9,3,4];
-// for(let i of arr6)
-// {
-//     console.log(i);
-// }
+document.getElementById("id1").onclick = function()
+{
+    let c = document.getElementById("cb4");
+    if(c.checked)
+        console.log("checked");
+    else
+        console.log("please check the checkbox then submit");
+}
+*/
 
 
+// ------  SWITCH statment ------ 
+// to get the grade based on marks - missing
+
+
+// ------  LOOPS, BREAK AND CONTINUE ------ 
+/*
+// --- while loop ---
+while(userName === "" || userName === null)
+    windows.prompt("Enter your name");
+
+// --- for of loop ---
+let arr6 = [1,2,5,4,9,3,4];
+for(let i of arr6)
+    console.log(i);
+
+for(let indexx in numbrs)
+    console.log(numbrs[indexx])
+
+
+alert("an  alert");
+prompt
+*/
 
 // ------- FUNCTION -----------
-// base on no of args (fun overloading)
+/*
+base on no of args (fun overloading)
 
-// let a=5,b=6,c=2,d=3;
-// console.log("sum: "+sum(a,b))
-// function sum(a,b){
-//     return a+b;
-// }
+let a=5,b=6,c=2,d=3;
+console.log("sum: "+sum(a,b))
+function sum(a,b){
+    return a+b;
+}
 
-// let r344 = fun121("Ak",20);
-// console.log("Total marks : "+r344);
-// function fun121(name,age)
-// {
-//     console.log("Its a function");
-//     console.log("Name: "+name);
-//     console.log("Age: "+age);
-//     let sub1 = prompt("Enter your marks in sub1");
-//     let sub2 = prompt("Enter your marks in sub2");
-//     sub1 = Number(sub1);
-//     sub2 = Number(sub2);
-//     return (sub1+sub2);
+let r344 = fun121("Ak",20);
+console.log("Total marks : "+r344);
+function fun121(name,age)
+{
+    console.log("Its a function");
+    console.log("Name: "+name);
+    console.log("Age: "+age);
+    let sub1 = prompt("Enter your marks in sub1");
+    let sub2 = prompt("Enter your marks in sub2");
+    sub1 = Number(sub1);
+    sub2 = Number(sub2);
+    return (sub1+sub2);
 
-// }
+}
+*/
 
-//  `````` TEMPLATES `````````````````````
+//  ------- TEMPLATES -------
+/*
+const oldAge = 54;
+console.log(`eldAge = ${oldAge}`)
+let ch23 = "a text";
+console.log(`Text is ${ch23} using  templates`); 
+*/
 
 
-// let ch23 = "a text";
-// console.log(`Text is ${ch23} using  templates`); 
-
-//  -----------TIME -> 1:58 hr ---------------
 
 // no.toLocalString(local,{option})
-// above fun is usde when an no needs to be changed in currency
-
-// ---------temperature convertion ---------------
+// above fun is used when an no needs to be changed in currency
 
 
-// --------- ARRAY  and spred operator (...) ----------
 
-// let a = ["rtu","paper","top"];
-// console.log(a);
-// a[2] = "back bencher";
-// console.log(a);      // push and pop insert and pop from last
-// a.push("ak"); 
-// console.log(a);
-// a.pop();
-// console.log(a);
-// a.unshift("first"); //insert at the iatarting & pop from last
-// console.log(a);
-// a.shift("first");
-// console.log(a);
-// console.log("length of array:" + a.length);
-// console.log("index of paper:" + a.indexOf("paper"));
+// --------- ARRAY ----------
+/*
+let arr3 = ["0","1","two"];
+console.log(arr3);              // ["0","1","two"];
+console.log(arr3[0])            // 0
+arr3[2] = "2";                  // ["0","1","2"];
 
-// access ele of array using loop
-// for(let i=0;i<=a.length;i++)
-// {
-//     console.log(i);
-// }
-// x = a.sort();
-// console.log(a);
-// x = a.reverse();
-// console.log(a);
+arr3.push("ak");                // push/pop - insert/pop ele from last
+console.log(arr3);              // ["0","1","2","ak"];
+arr3.pop();                        
+console.log(arr3);              // ["0","1","2"];
+
+arr3.unshift("-1");             // insert at the beginning
+console.log(arr3);              // ["-1","0","1","2"];
+arr3.shift();                   // remove from the beginning
+console.log(arr3);              // ["0","1","2"];
+
+console.log("length: ",arr3.length);  // length: 3
+console.log("index of 1: ",arr3.indexOf("1"));  // 1
+
+// access each ele of array using loop
+for(let i=0;i<=arr3.length;i++)
+    console.log(i);
+for(let ele of arr3)
+    console.log(ele)
+
+console.log(arr3.sort());
+console.log(arr3.reverse());
+*/
+
+// --------- SPRED OPERATOR (...) ----------
+/* 
+spread = unpack the elements of array/string
+rest = bundles diff ele into array
+
+let num4 = [1,2,3,4]
+// console.log(Math.max(num4))      // NaN (error)
+console.log(Math.max(...num4))      //  4
+
+let naaam = "anu";
+console.log(naaam)                  // anu
+console.log(...naaam)               // ['a','n','u'] 
+
+
+let ch = ["a","b","c"];
+let no = ["1","2","3"];
+let food = [...ch,...no]
+
+
+// ---- (...rest) operator ---- rest parameters
+function sumFun(...numbrs){
+    let res = 0;
+    for(let eachNoEle of numbrs)
+        res += eachNoEle
+    // for(let indexx in numbrs)
+    //     res += numbrs[indexx]
+    return res;
+}
+let result = sumFun(1,2,3)
+console.log(`Total sum: ${result}`)
+*/ 
 
 
 //  -----------------For each array ----------------
@@ -232,7 +295,9 @@ console.log(x);
 //     return total;
 // 
 
-//////////// 2:38 ////////////////////////////////////////////////////////////
+
+
+
 
 // ----------- CALL BACK -------------- CALL BACK ------------------- 
 // A function is passed as an argument to another function
@@ -671,6 +736,7 @@ console.log(x);
 // document.getElementById("current_time").innerHTML=clk_obj;
 
 
+/*
 update();
 document.getElementById("create_clock");
 function update() {
@@ -694,7 +760,7 @@ function update() {
 }
 
 setInterval(update,1000);
-
+*/
 
 // ------- Synchronous & aSynchronous ---------
 // -------- console.time -----------

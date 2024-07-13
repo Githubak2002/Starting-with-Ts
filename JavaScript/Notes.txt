@@ -1,0 +1,82 @@
+
+DICE ROLLER - Video - 29
+
+================= Notes =================
+
+NaN, null, undefined
+temp conversion
+counter
+
+
+
+=========================================
+
+
+=== Video 1 ===
+js comment
+window.alert("this is an alert")
+
+linking HTML,CSS and Js file 
+document.getElementById("myH1").textContent = "H1 with id = myH1 will display this"
+
+
+=== Video 2 ==
+variables
+numbers, string, boolean
+consloe.log(typeof var1)
+
+
+=== Video 3 ===
+arithmetic operations
++,-,*,/,% and **
+2**3 = 2^3 = 8
+
+
+=== Video 4 ===
+User input ? 
+1st way. const name = window.prompt("enter name")
+2nd way. html input with btn clilk with js onclick() 
+
+
+=== Video 5 ===
+type conversion - NaN, null, undefined
+let var1 = "hello"
+var1 = Number(var1)   // hello, string to no - NaN
+
+=== Video 6 ===
+constants - const
+
+=== Video 7 ===
+counter program
+
+=== Video 8 ===
+Math.sqrt(x)
+Math.floor(x)
+Math.round(x)
+Math.ceil(x)
+Math.pow(x,y)
+Math.random()
+
+
+=== Video 9 ===
+genrating random number  
+function randomNo() {
+    let x = Math.round(10 * Math.random()) 
+    return x;
+}
+
+
+
+========= Video 9,10,11,1213 =========
+
+if else, ternary operator, checked property, SWITCH
+
+
+checked property - if a check box/radio btn is checked or selected 
+radio btn and checked box
+
+if(age>=18) ? "adult" : "minor"
+
+
+========= Video 14 =========
+STRINGS methods
