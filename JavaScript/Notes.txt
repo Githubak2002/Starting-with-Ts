@@ -9,6 +9,11 @@ counter
 
 
 
+
+
+
+Yes, JavaScript is indeed a single-threaded language, meaning it has only one call stack and one memory heap. This single-threaded nature refers to the fact that JavaScript executes code in a linear fashion, one statement at a time, from top to bottom.
+
 =========================================
 
 

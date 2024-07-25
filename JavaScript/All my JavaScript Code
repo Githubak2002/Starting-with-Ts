@@ -254,10 +254,10 @@ console.log(cl3);
 let ch = ["a","b","c"];
 let no = ["1","2","3"];
 let food = [...ch,...no]
-
+*/
 
 // ---- (...rest) operator ---- rest parameters
-function sumFun(...numbrs){
+/*function sumFun(...numbrs){
     let res = 0;
     for(let indexx in numbrs)
         res += numbrs[indexx]
@@ -268,10 +268,7 @@ console.log(`Total sum: ${result}`)
 */ 
 
 
-// --------- For each array ---------
-
-
-
+// --------- array methods ---------
 
 
 // --------- CALL BACK -------------- CALL BACK ------------------- 
@@ -289,175 +286,99 @@ function discon(op){
 }
     */
 
-// --------- array.forEach() ----------------------------
-// let stud = ["anuj","puhpa","babu"];
-// stud.forEach(fun);
-// stud.forEach(fun2);
 
-// function fun(ele,index,arr){
-//     arr[index] = ele[0].toUpperCase() + ele.substring(1);
-// }
-// function fun2(ele) {
-//     console.log(ele);
-// }
-// console.log(stud[0]);
+// ---------- function EXPRESSION -------------
+/* 
+const greeting = function () {
+    console.log("fuction expression");
+}
+greeting();
 
-// arr = [1,23,534,2,43];
-// arr.forEach(fun);
-// function fun(ele,i,arr){   
-//     console.log(ele);    
-// }
-
-// ------------ function EXPRESSION -------------
-
-// const greeting = function () {
-//     console.log("fuction expression");
-// }
-// greeting();
-// EXAMPLE 
-
-// let c = 0;
-// document.getElementById("dcr").onclick = function()
-// {
-//     c = c-1;
-//     document.getElementById("h34").innerHTML = c;
-// } 
-// document.getElementById("inc").onclick = function()
-// {
-//     c = c+1;
-//     document.getElementById("h34").innerHTML = c;
-// } 
+let c = 0;
+document.getElementById("dcr").onclick = function(){
+    c = c-1;
+    document.getElementById("h34").innerHTML = c;
+} 
+document.getElementById("inc").onclick = function(){
+    c = c+1;
+    document.getElementById("h34").innerHTML = c;
+}
+*/
 
 // ---------- ARROW function -----------
-// const h = function(un){
-//     console.log(`Hello ${un}`);
-// }
-// h("anurag");
+/*  
+const h = function(un){
+    console.log(`Hello ${un}`);
+}
+h("anurag");
 
-// const h = (un) => {    console.log(`Hello ${un}`); }
-// const g = (x,y) => x+y
-// h("anurag");
-// console.log(`sum is ${g(2,5)}`);
+const h = (un) => {    console.log(`Hello ${un}`); }
+const g = (x,y) => x+y
+h("anurag");
+console.log(`sum is ${g(2,5)}`);
 
-// let ran = Math.floor(Math.random()*6 + 1);
-// console.log("A Random no on Dice is " +ran);
+let ran = Math.floor(Math.random()*6 + 1);
+console.log("A Random no on Dice is " +ran);
+*/
 
 
-
-// --------- WHY arror function ---------
+// ---------- WHY arror function ---------
 /*
 
-Shorter Syntax:
-In case of single expression No need of Return statement:
-event handlers, array methods (map, filter, reduce), and callbacks 
-Enhances code readability for short, inline functions 
-Widely used in modern JavaScript development, especially in frameworks like React for defining functional components and event handlers.
+Short syntax, for small function expression no need of return, react component, easily readable, used in morden JS
 
 */
 
-//------------ 3:06 ------------------
 
-// ------------ REST arguments ---------------
-// let  x=4;
-// let  k=5;
-// let  g=6;
-// console.log(add(x,k));
-// function add(...v) {
-//     sum = 0;
-//     for(let i of v){
-//         sum = sum + i;
-//     }
-//     return sum;
-// }
-
-// let c = "babu";
-// let d = "Mushaya";
-// fun1(c,d,fun2);
-// function fun1(a,b,kallback) {
-//     let fn = (a + " " + b);
-//     fun2(fn);    
-// }
-// function fun2(res) {
-//     console.log("name is: "+res);
-
-// }
-
-//  ------------ VIDEO no -> 41 [array function] ----------------------
-
-// -------------- arraymap() --------------------
-
-// let n = [1,2,3,4,5];
-
-// let newarr = n.map(square);
-
-// newarr.forEach(print);
-
-// function square(ele) {
-//     return Math.pow(ele,2);
-// }
-// function print(ele) {
-//     console.log(ele);
-// }
-
-// -------------- array.filter() --------------------
-
-// let a = [1,10,3,9,8,6,3];
-
-// let newarr = a.filter(callfun);
-// newarr.forEach(print);
-// function callfun(ele){
-//     if(ele%2 == 0)
-//     return ele;    
-// }
-// function print(ele)
-// {
-//     console.log(ele);
-// }
-
-// ------------ video 47 ----------------------------
-
-// ------------------ NESTER FUNCTION ---------------
-
+// ---------- NESTER FUNCTION ---------------
+/* 
 // username and userid fun can't be called
-// let un = "name",id = 34;
-// login();
-// function login() {
-//     username();
-//     userid();
 
-//     function username() {
-//         console.log("Username : "+un);
-//     }
-//     function userid() {
-//         console.log("USer id : "+id);
-//     }
-// }
+let un = "name",id = 34;
+login();
+function login() {
+    username();
+    userid();
 
-// ------------- ??? MAP ??? ------------ video 50 --------------------
+    function username() {
+        console.log("Username : "+un);
+    }
+    function userid() {
+        console.log("USer id : "+id);
+    }
+}
+*/
 
-// ---------------- OBJECTS ------------------------
+
+
+
+
+
+// ------------ OBJECTS ------------------------
 // obj contains properties and functions()
 
-// ------------------- This keyword ---------------
+// ------------ This keyword ---------------
+/* 
 //  reference to a perticular obj
 
-// const obj = {
-//     color: "red",
-//     no_of_balls: 34,
+const obj = {
+    color: "red",
+    no_of_balls: 34,
 
-//     fun1 : function()    {
-//         console.log("1st function of the object");
-//     },
-//     fun2 : function()    {
-//         console.log("2nd function of the object.");
-//         // fun accessing the properties of an obj -> THIS 
-//         console.log(`FUN OF OBJ CAN ACCESS PROPERTIES OF IT'S OBJ BY USING THIS KEYWORD, as color is : ${this.color}`);
-//     }
-// }
+    fun1 : function()    {
+        console.log("1st function of the object");
+    },
+    fun2 : function()    {
+        console.log("2nd function of the object.");
+        // fun accessing the properties of an obj -> THIS 
+        console.log(`FUN OF OBJ CAN ACCESS PROPERTIES OF IT'S OBJ BY USING THIS KEYWORD, as color is : ${this.color}`);
+    }
+}
 
-// console.log("color of obj created : "+obj.color);
-// obj.fun1();
-// obj.fun2();     // access the properties using -> THIS KEYWORD  
+console.log("color of obj created : "+obj.color);
+obj.fun1();
+obj.fun2();     // access the properties using -> THIS KEYWORD  
+*/
 
 // ---------------------- CLASS ------------------------------ VIDEO 53
 
@@ -759,7 +680,7 @@ setInterval(update,1000);
 // console.timeEnd("Time responce");
 
 
-//  ----------------- promise ------------------------
+//  ----------------- PROMISES ------------------------
 
 // let x = 2;
 // const p = new Promise((resolve,reject) =>{
@@ -809,3 +730,13 @@ setInterval(update,1000);
 
 
 
+
+
+// =============== REAMING TOPICS
+
+/*
+promisis
+async and await
+
+
+*/
