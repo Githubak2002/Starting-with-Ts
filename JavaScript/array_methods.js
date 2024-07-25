@@ -1,47 +1,50 @@
-// --------- Different Array methods -------- push, pop,forEach, map, filter, slice, indexOf,
+// --------- Different Array methods -------- push, pop,forEach, map, filter, slice, indexOf, find, some, every
+
 /*
 The main differences b/n the forEach() and map() functions in JavaScript are:
-1. Return value: forEach() doesn't return anything, while map() returns a new array with the transformed elements.
+1. Return value: forEach() doesn't return anything, just iterates and performs a function. map() returns a new array with the transformed elements.
 2. Chainability: map() is chainable, meaning you can chain other methods after it, while forEach() isn't.
  */
 
 console.log("==================\n\n");
 
-// new_arr = arr.map(ele => ele*ele)
-// console.log(new_arr)
-
 // Create an array
 let arr = [1, 2, 3, 4, 5];
 
-// Method: map()
-// Description: Creates a new array by calling a specific function on each element present.
-console.log(arr.map(x => x * 2));   // Output: [2, 4, 6, 8, 10]
-
-// Method: filter()
-// Description: Creates a new array with elements that pass a test.
-// Output: [2, 4]
-console.log(arr.filter(x => x % 2 === 0));
-
 // Method: forEach()
-// Description: Calls a function for each element in the array.
-// Output: Prints each element in the array
+// Calls a fun (callback) for each ele in the arr. [no new arr, just iterates]
 arr.forEach(x => console.log(x));
 
-// Method: reduce()
-// Description: Reduces the array to a single value.
+
+// map()
+// Creates a NEW array by calling a function on each element present.
+console.log(arr.map(x => x * 2));   // Output: [2, 4, 6, 8, 10]
+
+// filter()
+// Creates a NEW array with elements that pass a test.
+console.log(arr.filter(x => x % 2 === 0));      // Output: [2, 4]
+
+// find()
+// Returns the First ele that satisfies the condition
+console.log(`ndex of 4: ${arr.find(x => x===4)}`)
+
+// slice()
+// Returns a shallow copy of a portion of an array.
+console.log(arr.slice(1, 4));                   // Output: [2, 3, 4]
+
+// indexOf()
+// Returns the first index at which a given element can be found in the array.
+console.log(arr.indexOf(3));                    // Output: 2
+
+
+
+
+
+// reduce()
+// Reduces the array to a single value.
 // Output: 15
 console.log(arr.reduce((acc, curr) => acc + curr, 0));
 
-
-// Method: slice()
-// Description: Returns a shallow copy of a portion of an array.
-// Output: [2, 3, 4]
-console.log(arr.slice(1, 4));
-
-// Method: indexOf()
-// Description: Returns the first index at which a given element can be found in the array.
-// Output: 2
-console.log(arr.indexOf(3));
 
 // Method: join()
 // Description: Joins all elements of an array into a string.
@@ -53,9 +56,7 @@ console.log(arr.join());
 // Output: [1, 2, 3, 4, 5]
 console.log(arr.sort((a, b) => a - b));
 
-// find
-let arr1 = [0,1,2,3,4,5,6]
-console.log(` index of 4: ${arr.find(x => x===4)}`)
+
 
 
 

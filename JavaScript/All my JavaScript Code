@@ -268,26 +268,28 @@ console.log(`Total sum: ${result}`)
 */ 
 
 
-//  ---------For each array ---------
+// --------- For each array ---------
 
 
 
 
 
-// ----------- CALL BACK -------------- CALL BACK ------------------- 
-// A function is passed as an argument to another function
+// --------- CALL BACK -------------- CALL BACK ------------------- 
+/*  
+A function is passed as an argument to another function
 
-// sum(2,3,discon);
+sum(2,3,discon);
 
-// function sum(x,y,cal){
-//     let res = x+y;
-//     cal(res);
-// }
-// function discon(op){
-//     console.log(op);
-// }
+function sum(x,y,cal){
+    let res = x+y;
+    cal(res);
+}
+function discon(op){
+    console.log(op);
+}
+    */
 
-// ------------- array.forEach() ----------------------------
+// --------- array.forEach() ----------------------------
 // let stud = ["anuj","puhpa","babu"];
 // stud.forEach(fun);
 // stud.forEach(fun2);
@@ -306,7 +308,7 @@ console.log(`Total sum: ${result}`)
 //     console.log(ele);    
 // }
 
-// ------------ function expression -------------
+// ------------ function EXPRESSION -------------
 
 // const greeting = function () {
 //     console.log("fuction expression");
@@ -326,7 +328,7 @@ console.log(`Total sum: ${result}`)
 //     document.getElementById("h34").innerHTML = c;
 // } 
 
-// ---------- arrow function -----------
+// ---------- ARROW function -----------
 // const h = function(un){
 //     console.log(`Hello ${un}`);
 // }
@@ -340,6 +342,18 @@ console.log(`Total sum: ${result}`)
 // let ran = Math.floor(Math.random()*6 + 1);
 // console.log("A Random no on Dice is " +ran);
 
+
+
+// --------- WHY arror function ---------
+/*
+
+Shorter Syntax:
+In case of single expression No need of Return statement:
+event handlers, array methods (map, filter, reduce), and callbacks 
+Enhances code readability for short, inline functions 
+Widely used in modern JavaScript development, especially in frameworks like React for defining functional components and event handlers.
+
+*/
 
 //------------ 3:06 ------------------
 
