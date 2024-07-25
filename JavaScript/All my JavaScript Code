@@ -238,12 +238,17 @@ spread = unpack the elements of array/string
 rest = bundles diff ele into array
 
 let num4 = [1,2,3,4]
-// console.log(Math.max(num4))      // NaN (error)
+console.log(Math.max(num4))         // NaN (error)
 console.log(Math.max(...num4))      //  4
 
 let naaam = "anu";
 console.log(naaam)                  // anu
 console.log(...naaam)               // ['a','n','u'] 
+
+let cl3 = ["ab","cd"]; 
+let cl4 = ["ba","dc"]; 
+cl3.push(...cl4);
+console.log(cl3);
 
 
 let ch = ["a","b","c"];
@@ -254,10 +259,8 @@ let food = [...ch,...no]
 // ---- (...rest) operator ---- rest parameters
 function sumFun(...numbrs){
     let res = 0;
-    for(let eachNoEle of numbrs)
-        res += eachNoEle
-    // for(let indexx in numbrs)
-    //     res += numbrs[indexx]
+    for(let indexx in numbrs)
+        res += numbrs[indexx]
     return res;
 }
 let result = sumFun(1,2,3)
@@ -265,35 +268,7 @@ console.log(`Total sum: ${result}`)
 */ 
 
 
-//  -----------------For each array ----------------
-
-// ----------- spredd operator ... -------------------
-// console.log(...a);
-
-// let arr4 = [1,2,5,4,9,3,4];
-// max0 = Math.max(...arr4); 
-// console.log("max : "+max0);
-
-// let cl3 = ["ab","cd"]; 
-// let cl4 = ["ba","dc"]; 
-// cl3.push(...cl4);
-// console.log(cl3);
-
-// -------------REST PARAMETER using loop ----------------
-
-// let a=5,b=4,c=2;
-// console.log("Same FUCTION for different no of i/p");
-// console.log("sum of two no : "+sum(a,b));
-// console.log("sum of three no : "+sum(a,b,c));
-// function sum (...number)
-// {
-//     let total = 0;
-//     for(let no of number)
-//     {
-//         total = no + total;
-//     }
-//     return total;
-// 
+//  ---------For each array ---------
 
 
 
