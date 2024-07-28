@@ -64,8 +64,8 @@ Error Handling:
 try...catch blocks and throwing errors
 Handling asynchronous errors
 Best practices for error handling
-Module System:
 
+Module System:
 CommonJS vs. ES6 modules
 import and export syntax
 Module bundlers like Webpack and Rollup

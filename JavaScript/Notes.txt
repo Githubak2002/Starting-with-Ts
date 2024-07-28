@@ -11,8 +11,32 @@ counter
 
 
 
-
+=== JS is a single-threaded language ===
 Yes, JavaScript is indeed a single-threaded language, meaning it has only one call stack and one memory heap. This single-threaded nature refers to the fact that JavaScript executes code in a linear fashion, one statement at a time, from top to bottom.
+
+=== Node js ? ===
+runtime environment that allows you to run js code on the server-side, outside of a web browser. It uses the V8 JavaScript engine, which is the same engine used by Google Chrome, to execute JavaScript code.
+
+Key Points about Node.js:
+
+Server-Side JavaScript:
+used for server-side scripting
+
+Event-Driven and Non-Blocking I/O Model:
+can handle multiple requests concurrently without getting blocked
+
+NPM (Node Package Manager):
+Node.js comes with NPM, a package manager that allows developers to easily install, manage, and share third-party libraries (packages) and tools for building applications.
+Use Cases:
+
+Node.js is well-suited for building real-time applications (like chat applications or streaming services) and APIs.
+It's also used for building server-side web applications and microservices architecture.
+Node.js is popular in the development of tools and utilities for front-end developers (e.g., build tools, task runners).
+
+Advantages:
+Simplifies development by allowing developers to use the same language (JavaScript) both on the client-side and server-side.
+Provides a rich ecosystem of libraries and modules through NPM.
+High performance due to its event-driven, non-blocking architecture.
 
 =========================================
 

@@ -560,6 +560,8 @@ obj.fun2();     // access the properties using -> THIS KEYWORD
 
 // ------------------------ errors --------------------
 
+
+
 // ----------------------- SetTimeOut---- & ----- clear time out ----------------------
  
 // let no = 20;
