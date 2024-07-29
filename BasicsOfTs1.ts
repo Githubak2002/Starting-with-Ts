@@ -1,16 +1,20 @@
-// Basic of typeScript
+// ======= Basic TypeScript Concepts =======
 
-// Never data type
-
-/* 
-TypeScript - 
+/* TypeScript - 
   enhance your JavaScript projects with type safety and better tooling. 
   ts is a superset of js that adds static typing. 
   helps you catch errors at compile time and provides better tooling support.
 */
 
 
-// ======= Basic TypeScript Concepts =======
+/*  data type 
+    - tuple, obj, arr, union, number, string, boolean
+    - interface, functions, objecy
+  
+  Never data type
+*/
+
+
 
 let x1:number = 90;
 let x2=<string>"Anurag here";
@@ -49,7 +53,7 @@ let user1: { name: string; age: number } = {
 console.log(`${user1.name} is ${user1.age} years old.`);
 
 
-/* 2.2. Functions
+/* 2.2. ==== Functions ====
   ts allows you to define types for function parameters and return values.
  */
 
@@ -72,8 +76,10 @@ function greetFun3(name: string, greeting: string = "Hello"): string {
 console.log(greetFun3("Alice")); // Output: Hello, Alice!
 
 
-/* 2.3. Interfaces
-  define the shape of objects. They are used to describe complex types.
+/* 2.3. ==== Interfaces ====
+  define the shape of objects. 
+  They are used to describe complex types.
+  can be inherited
 */
 
 // Basic Interface:
@@ -81,28 +87,19 @@ interface UserInterface {
   name: string;
   age: number;
 }
-let userNew: UserInterface = {
+
+// Optional and Read-Only Properties:
+interface User21 extends UserInterface {
+  readonly id: number;  // readonly - cant be edited once assigne a value
+  gender?: boolean;    // age is optional
+}
+let userNew: User21 = {
+  id:101,
   name: "Bob",
-  age: 40
+  age: 40,
 };
 console.log(`${userNew.name} is ${userNew.age} years old.`);
 
-// Optional Properties:
-interface User21 {
-  name: string;
-  age?: number; // age is optional
-}
-let user21: User21 = {
-  name: "Bob"
-};
 
-// Read-Only Properties:
-interface User41 {
-  readonly id: number;
-  name: string;
-}
-let user41: User41 = {
-  id: 1,
-  name: "Charlie"
-};
-// user.id = 2; // Error: Cannot assign to 'id' because it is a read-only property.
+
+// user21.id = 2; // Error: Cannot assign to 'id' because it is a read-only property.
