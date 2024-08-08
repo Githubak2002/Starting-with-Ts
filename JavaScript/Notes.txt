@@ -3,6 +3,7 @@ DICE ROLLER - Video - 29
 
 ================= Notes =================
 
+HOSTING IN JAVASCRIPT [UNDEFINED AND NOT DEFINED]
 NaN, null, undefined
 temp conversion
 counter
@@ -12,7 +13,7 @@ counter
 
 
 === JS is a single-threaded language ===
-Yes, JavaScript is indeed a single-threaded language, meaning it has only one call stack and one memory heap. This single-threaded nature refers to the fact that JavaScript executes code in a linear fashion, one statement at a time, from top to bottom.
+meaning it has only one call stack and one memory heap. This single-threaded nature refers to the fact that JavaScript executes code in a linear fashion, one statement at a time, from top to bottom.
 
 === Node js ? ===
 runtime environment that allows you to run js code on the server-side, outside of a web browser. It uses the V8 JavaScript engine, which is the same engine used by Google Chrome, to execute JavaScript code.
@@ -38,7 +39,7 @@ Simplifies development by allowing developers to use the same language (JavaScri
 Provides a rich ecosystem of libraries and modules through NPM.
 High performance due to its event-driven, non-blocking architecture.
 
-=========================================
+===========================================================================================
 
 
 === Video 1 ===

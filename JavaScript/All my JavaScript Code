@@ -323,9 +323,13 @@ console.log("A Random no on Dice is " +ran);
 
 
 // ---------- WHY arror function ---------
-/*
+/* 
 
-Short syntax, for small function expression no need of return, react component, easily readable, used in morden JS
+Short syntax
+small function expression no need of return, 
+react component, 
+easily readable, 
+used in morden JS
 
 */
 
