@@ -8,7 +8,6 @@ console.log(myVar); // UNDEFINED [it is undefined(value need to be assigned) - N
 var myVar = 5;
 console.log(myVar); // 5
 
-
 // JavaScript hoists the declaration of myVar to the top of its scope. However, only the declaration is hoisted, not the initialization. The code above is effectively interpreted by JavaScript as:
 
 var myVar;            // Declaration is hoisted
@@ -16,11 +15,19 @@ console.log(myVar);   // undefined
 myVar = 5;            // Initialization remains in place
 console.log(myVar);   // 5
 
+
+// ============================ var v/s let ============================ 
+// let variables are hoisted but not initialized, var variables are hoisted and initialized to undefined
+console.log(v1);      // ReferenceError: v1 is not defined
+let v1 = 5;
+console.log(v1);      // 5
+
+
 // =====================================================================
 
 
 
-// ============================ Functions ============================ 
+// ============================ Functions ==============================
 
 // with function key word
 console.log(myFunc());        // "Hello, World!"  
@@ -28,7 +35,7 @@ function myFunc() {
   return "Hello, World!";
 }
 
-// with arrow function
+// with arrow function or function expression 
 func();                       // func is NOT defined
 const func = () => {
   console.log("Hello, World!!");
@@ -38,6 +45,21 @@ const func = () => {
 // =====================================================================
 
 
-// ============================ var v/s let ============================ 
-console.log(myVar);       // ReferenceError: Cannot access 'myVar' before initialization
-let myVar = 5;
+
+
+
+// ======== Function keyword, Arrow Function, Function expression =======
+
+
+// Function Declaration
+function add(a, b) {
+  return a + b;
+}
+
+// Function expression
+const add = function(a, b) {
+  return a + b;
+};
+
+// Arrow Function
+const add = (a, b) => a + b;

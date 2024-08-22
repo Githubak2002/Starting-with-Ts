@@ -11,7 +11,7 @@ console.log("==================\n\n");
 // Create an array
 let arr = [1, 2, 3, 4, 5];
 
-// Method: forEach()
+// forEach()
 // Calls a fun (callback) for each ele in the arr. [no new arr, just iterates]
 arr.forEach(x => console.log(x));
 
@@ -24,13 +24,18 @@ console.log(arr.map(x => x * 2));   // Output: [2, 4, 6, 8, 10]
 // Creates a NEW array with elements that pass a test.
 console.log(arr.filter(x => x % 2 === 0));      // Output: [2, 4]
 
-// find()
-// Returns the First ele that satisfies the condition
-console.log(`ndex of 4: ${arr.find(x => x===4)}`)
-
 // slice()
 // Returns a shallow copy of a portion of an array.
 console.log(arr.slice(1, 4));                   // Output: [2, 3, 4]
+
+// find()
+// Returns the First ele that satisfies the condition
+console.log(`First ele that satisfies the condition: ${arr.find(x => x%4 === 0)}`)
+
+// findIndex()
+// Find the index of the first ele in an arr satisfies a provided testing function else returns -1
+const index = arr.findIndex(num => num > 3);
+console.log(index); // Output: 3 
 
 // indexOf()
 // Returns the first index at which a given element can be found in the array.
