@@ -1,7 +1,7 @@
 // ====== PROMISES ==========
 
 /* Promises -
-  objects that represent the eventual completion or failure of an asynchronous operation, and its resulting value. They are a way to handle asynchronous operations more easily and avoid callback hell (nested callbacks).
+  Objects that represent the eventual completion/failure of an asynchronous operation, and its resulting value. They are a way to handle asynchronous operations more easily and avoid callback hell (nested callbacks).
 
 Anatomy of a Promise:
 

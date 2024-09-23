@@ -15,7 +15,18 @@ let  numArr = [1,2,3,4,5];
 numArr.forEach(ele => process.stdout.write(ele + " "));   // 1 2 3 4 5 
 
 let res = funExpression(numArr);
-console.log("res = ",res)
+console.log("\nres = ",res)
+
+
+// ===== includes arr v/s string =====
+let arr1 = ["one","two","three"]
+console.log(arr1.includes("two"))     // true
+console.log(arr1.includes("tw"))      // false
+
+let str1 = "hello there"
+console.log(str1.includes("hello"))   // true
+console.log(str1.includes("he"))      // true
+
 
 
 

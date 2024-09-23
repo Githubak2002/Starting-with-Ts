@@ -281,10 +281,11 @@ function sum(x,y,cal){
     let res = x+y;
     cal(res);
 }
+
 function discon(op){
     console.log(op);
 }
-    */
+*/
 
 
 // ---------- function EXPRESSION -------------

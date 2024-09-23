@@ -1,20 +1,20 @@
-// --------- Different Array methods -------- push, pop,forEach, map, filter, slice, indexOf, find, some, every
+// --------- Different Array methods -------- 
 
-/*
-The main differences b/n the forEach() and map() functions in JavaScript are:
-1. Return value: forEach() doesn't return anything, just iterates and performs a function. map() returns a new array with the transformed elements.
-2. Chainability: map() is chainable, meaning you can chain other methods after it, while forEach() isn't.
- */
+// push, pop, forEach, map, filter, reduce, find, slice, indexOf, join, split, some, every
+
+
+// A HIGHER-ORDER FUNCTION - function that either takes one or more functions as arguments or returns a function as its result. These functions are fundamental in functional programming and enable a more abstract and concise way to handle operations. EXAMPLE - map,filter,reduce
+
 
 console.log("==================\n\n");
 
+// ========================================== Important* ==========================================
 // Create an array
 let arr = [1, 2, 3, 4, 5];
 
 // forEach()
 // Calls a fun (callback) for each ele in the arr. [no new arr, just iterates]
 arr.forEach(x => console.log(x));
-
 
 // map()
 // Creates a NEW array by calling a function on each element present.
@@ -24,13 +24,18 @@ console.log(arr.map(x => x * 2));   // Output: [2, 4, 6, 8, 10]
 // Creates a NEW array with elements that pass a test.
 console.log(arr.filter(x => x % 2 === 0));      // Output: [2, 4]
 
-// slice()
-// Returns a shallow copy of a portion of an array.
-console.log(arr.slice(1, 4));                   // Output: [2, 3, 4]
+// reduce()
+// Reduces the array to a single value.
+console.log(arr.reduce((acc, curr) => acc + curr, 0));      // Output: 15
+
 
 // find()
 // Returns the First ele that satisfies the condition
 console.log(`First ele that satisfies the condition: ${arr.find(x => x%4 === 0)}`)
+
+// ===========================================================================================
+
+
 
 // findIndex()
 // Find the index of the first ele in an arr satisfies a provided testing function else returns -1
@@ -41,14 +46,11 @@ console.log(index); // Output: 3
 // Returns the first index at which a given element can be found in the array.
 console.log(arr.indexOf(3));                    // Output: 2
 
+// slice()
+// Returns a shallow copy of a portion of an array.
+console.log(arr.slice(1, 4));                   // Output: [2, 3, 4]
 
 
-
-
-// reduce()
-// Reduces the array to a single value.
-// Output: 15
-console.log(arr.reduce((acc, curr) => acc + curr, 0));
 
 
 // Method: join()
@@ -62,23 +64,14 @@ console.log(arr.join());
 console.log(arr.sort((a, b) => a - b));
 
 
-
-
-
-
-
-
-
-
-
-
-
 console.log("\n\n==================")
 
-/*
+/* The main differences b/n the forEach() and map() functions in JavaScript are:
+1. Return value: forEach() doesn't return anything, just iterates and performs a function. map() returns a new array with the transformed elements.
+2. Chainability: map() is chainable, meaning you can chain other methods after it, while forEach() isn't.
+ */
 
-
-Sure, here are the definitions with examples for all the array methods in JavaScript:
+/* Sure, here are the definitions with examples for all the array methods in JavaScript:
 
 1. forEach() Function:
    - Purpose: Iterates over each element in an array and performs a specified operation.
