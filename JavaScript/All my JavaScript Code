@@ -2,7 +2,24 @@
 
 
 // ------ Variables ------
-/*
+/*===== var v/s let =====
+1. Scope
+    var:
+    Function-scoped. If declared inside a function, it’s only accessible within that function.
+    If declared outside any function, it becomes a global variable.
+    let:
+    Block-scoped. It’s only accessible within the nearest enclosing block (e.g., a loop, an if statement).
+2. Hoisting
+    var:
+    Hoisted to the top of its scope, meaning it can be referenced before it’s declared. However, its value will be undefined until the declaration is reached.
+    let:
+    Also hoisted, but cannot be accessed until the line of code where it is declared is executed (temporal dead zone). This means you’ll get a ReferenceError if you try to use it before declaration.
+3. Redeclaration
+    var:
+    Can be redeclared within the same scope without errors.
+    let:
+    Cannot be redeclared in the same block scope. Attempting to do so will result in a SyntaxError.
+
 let x = 5;
 console.log("var "+x);
 document.getElementById("h11").innerHTML = "Hello world"; 
