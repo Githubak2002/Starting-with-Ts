@@ -33,6 +33,11 @@ console.log(arr.reduce((acc, curr) => acc + curr, 0));      // Output: 15
 // Returns the First ele that satisfies the condition
 console.log(`First ele that satisfies the condition: ${arr.find(x => x%4 === 0)}`)
 
+// Array() and fill()
+let arr21 = new Array(4).fill(false);
+console.log(arr); // Output: [false, false, false, false]
+
+
 // ===========================================================================================
 
 

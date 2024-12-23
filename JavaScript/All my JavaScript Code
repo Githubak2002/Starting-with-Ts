@@ -1,8 +1,17 @@
-// console.log(`Text is ${ch23} using  templates`); 
 
+/* ------ primitive & non primitive datatypes ------
+primitive - string, number, boolean, null, undefined, symbol
+non-primitive - (data types can store only a single value) 
+    object, array, function [one that contains ]
 
-// ------ Variables ------
-/*===== var v/s let =====
+    
+typeof undefined  // Returns "undefined"
+typeof null       // Returns "object" (kind of a bug in JavaScript)
+typeof NaN        // Returns "number"
+typeof Symbol('symbol') // Returns Symbol
+*/
+
+/* ------ var v/s let ------
 1. Scope
     var:
     Function-scoped. If declared inside a function, it’s only accessible within that function.
@@ -25,15 +34,13 @@ console.log("var "+x);
 document.getElementById("h11").innerHTML = "Hello world"; 
  */
 
-// ------ arithmatic expressions ------
-/*
+/* ------ arithmatic expressions ------
 let ax1 = 3,ax2 = 4;
 console.log("sum :"+(ax1+ax2) );
 console.log("ax1^ax2 = ",ax1**ax2)
 */
 
-// ------ USERS INPUT ------ 
-/* 
+/* ------ USERS INPUT ------ 
 // let user1 = prompt("name?");
 // console.log("hello"+user1);
 document.getElementById("bt1").onclick = function()
@@ -46,22 +53,17 @@ document.getElementById("bt1").onclick = function()
 // document.getElementById("bt1").onclick = function()
 */
 
-// ------ TYPE conversion ------ 
-/*
+/* ------ TYPE conversion ------ 
+
 let x23 = window.prompt("age?");
 // age += 1;     cannot concatinate string and no 
 // console.log(age);
 // x23 = Number(x23);
 x23 = Number(x23);
-console.log(typeof x23);
+console.log(typeof x23);  // number
 x23 += 2; 
 x23 = x23.toString();
 console.log(typeof x23);
-
-let d = 12;
-console.log("value of d is:"+d +" and the type of d is ",typeof d);
-c = String(d);
-console.log("value of d is:"+c +" and the type of d after changing it to Number is ",typeof c);
 
 let y = 76;
 let u = "23";
@@ -71,20 +73,14 @@ console.log("u : "+u +" "+typeof(u));
 console.log(typeof(y));
 */
 
-// ------ Const ------
-/* 
-let piiiii = 3.15;        //can be changed
-const piii = 3.14;        //cannot be changed
-*/
+/* ------ MATH ------
 
-// ------ MATH ------
-/* 
 x = Math.abs(-4.56);    //4.56
 x = Math.sqrt(4);       //2
 x = Math.round(5.4)     //5
 x = Math.floor(45.999)  //45
 x = Math.ceil(45.009)   //46  
-x = Math.pow(5,3)       //45
+x = Math.pow(5,3)       //125
 x = Math.max(5,3,1)     //5
 */
 
